@@ -4,6 +4,10 @@ document.addEventListener('click', (e) => {
   const spider = document.querySelector('.spider');
   const wall = document.querySelector('.wall');
 
+  if (!spider || !wall) {
+    return;
+  }
+
   const spiderRect = spider.getBoundingClientRect();
   const wallRect = wall.getBoundingClientRect();
 
